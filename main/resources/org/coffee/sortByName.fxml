@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d2b48c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SortByNameController">
+   <children>
+      <Button fx:id="BackButton1" layoutX="26.0" layoutY="291.0" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #674c28;" text="Назад" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="100.0" layoutY="2.0" prefHeight="83.0" prefWidth="494.0" text="Сортування за назвою" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackToMenuButton" layoutX="546.0" layoutY="291.0" mnemonicParsing="false" onAction="#BackToMenuButton" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #674c28;" text="Меню" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableview" layoutX="26.0" layoutY="99.0" prefHeight="182.0" prefWidth="631.0">
+         <columns>
+            <TableColumn fx:id="title" prefWidth="130.0" text="Сорт кави" />
+            <TableColumn fx:id="Condition" prefWidth="130.0" text="Стан кави" />
+            <TableColumn fx:id="Wrap" prefWidth="130.0" text="Тип пакування" />
+            <TableColumn fx:id="Volume" prefWidth="120.0" text="Об'єм" />
+            <TableColumn fx:id="Cost" prefWidth="120.0" text="Ціна" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

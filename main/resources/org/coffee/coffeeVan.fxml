@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d2b48c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CoffeeVanController">
+   <children>
+      <TableView fx:id="tableview" layoutX="24.0" layoutY="184.0" prefHeight="160.0" prefWidth="630.0">
+         <columns>
+            <TableColumn fx:id="title" prefWidth="130.0" text="Сорт кави" />
+            <TableColumn fx:id="Condition" prefWidth="130.0" text="Стан кави" />
+            <TableColumn fx:id="Wrap" prefWidth="130.0" text="Тип пакування" />
+            <TableColumn fx:id="Volume" prefWidth="120.0" text="Об'єм" />
+            <TableColumn fx:id="Cost" prefWidth="120.0" text="Ціна" />
+         </columns>
+      </TableView>
+      <Button fx:id="BackToMenuButton" layoutX="559.0" layoutY="19.0" mnemonicParsing="false" onAction="#BackToMenuButton" prefHeight="50.0" prefWidth="97.0" style="-fx-background-color: #674c28;" text="Меню" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="21.0" layoutY="82.0" text="Об'єм фугрону:" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="116.0" text="Загальний об'єм кави в фургоні:" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="150.0" text="Загальна ціна кави в фургоні:" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="TotalVolume" layoutX="507.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="107.78125">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="UsedVolume" layoutX="507.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="ProductCost" layoutX="507.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="29.0" layoutY="-1.0" prefHeight="83.0" prefWidth="522.0" text="Інформація про фургон" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
