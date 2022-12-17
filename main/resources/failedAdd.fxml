@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d2b48c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FailedAddController">
+   <children>
+      <Label layoutX="207.0" layoutY="-1.0" prefHeight="83.0" prefWidth="285.0" text="Оберіть каву" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackToMenuButton" layoutX="553.0" layoutY="16.0" mnemonicParsing="false" onAction="#BackToMenuButton" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: #674c28;" text="Меню" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="CoffeeTypeChoice" layoutX="302.0" layoutY="129.0" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: #c6a881; -fx-border-color: #674c28;" />
+      <ChoiceBox fx:id="CoffeeConditionChoice" layoutX="302.0" layoutY="184.0" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: #c6a881; -fx-border-color: #674c28;" />
+      <ChoiceBox fx:id="CoffeeWrapChoice" layoutX="302.0" layoutY="241.0" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: #c6a881; -fx-border-color: #674c28;" />
+      <Button fx:id="AddButton" layoutX="388.0" layoutY="289.0" mnemonicParsing="false" onAction="#Add" prefHeight="43.0" prefWidth="272.0" style="-fx-background-color: #674c28;" text="Спробувати ще раз" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="149.0" layoutY="128.0" prefHeight="18.0" prefWidth="114.0" text="Сорт кави" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="183.0" prefHeight="18.0" prefWidth="114.0" text="Стан кави" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="239.0" prefHeight="34.0" prefWidth="165.0" text="Тип пакування" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="278.0" prefHeight="70.0" prefWidth="272.0" text="Не вдалося додати каву!" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

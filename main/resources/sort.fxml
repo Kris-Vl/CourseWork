@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d2b48c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SortController">
+    <children>
+        <Button fx:id="SortByCostButton" layoutX="31.0" layoutY="109.0" mnemonicParsing="false" onAction="#SortByCostButton" prefHeight="46.0" prefWidth="280.0" style="-fx-background-color: #674c28;" text="Сортування за ціною" textFill="TAN">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+        </Button>
+        <Label layoutX="17.0" layoutY="14.0" prefHeight="83.0" prefWidth="612.0" text="Оберіть спосіб сортування" textFill="#674c28">
+            <font>
+                <Font name="Ink Free" size="48.0" />
+            </font>
+        </Label>
+        <Button fx:id="BackToMenuButton" layoutX="583.0" layoutY="285.0" mnemonicParsing="false" onAction="#BackToMenuButton" prefHeight="50.0" prefWidth="92.0" style="-fx-background-color: #674c28;" text="Меню" textFill="TAN">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="SortByNameButton" layoutX="31.0" layoutY="190.0" mnemonicParsing="false" onAction="#SortByNameButton" prefHeight="46.0" prefWidth="280.0" style="-fx-background-color: #674c28;" text="Сортування за назвою" textFill="TAN">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="SortByVolumeButton" layoutX="31.0" layoutY="276.0" mnemonicParsing="false" onAction="#SortByVolumeButton" prefHeight="46.0" prefWidth="280.0" style="-fx-background-color: #674c28;" text="Сортування за об'ємом" textFill="TAN">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="255.0" fitWidth="216.0" layoutX="350.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/030279d469637dc1ed339e22e61d74c8.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

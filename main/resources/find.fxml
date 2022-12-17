@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d2b48c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FindController">
+   <children>
+      <Button fx:id="FindByCostButton" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" onAction="#FindByCost" prefHeight="46.0" prefWidth="280.0" style="-fx-background-color: #674c28;" text="Пошук за ціною" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="14.0" prefHeight="83.0" prefWidth="612.0" text="Оберіть параметр пошуку" textFill="#674c28">
+         <font>
+            <Font name="Ink Free" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackToMenuButton" layoutX="562.0" layoutY="287.0" mnemonicParsing="false" onAction="#BackToMenuButton" prefHeight="50.0" prefWidth="92.0" style="-fx-background-color: #674c28;" text="Меню" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="FindByVolumeButton" layoutX="31.0" layoutY="250.0" mnemonicParsing="false" onAction="#FindByVolume" prefHeight="46.0" prefWidth="280.0" style="-fx-background-color: #674c28;" text="Пошук за об'ємом" textFill="TAN">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="255.0" fitWidth="216.0" layoutX="339.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/030279d469637dc1ed339e22e61d74c8.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
